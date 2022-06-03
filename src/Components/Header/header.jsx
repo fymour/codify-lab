@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { WishList } from "";
+import { Wishlist } from "../Wishlist/wish-list";
 import "./header.css";
 
 export const Header = () => {
@@ -12,7 +12,7 @@ export const Header = () => {
         </Link>
       </div>
       <div className="wrapper header__wish-list-wrapper">
-         {/* <WishList />  */}
+         <Wishlist /> 
       </div>
     </div>
   );
