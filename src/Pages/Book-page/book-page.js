@@ -8,13 +8,19 @@ import "./book-page.css";
 export const BookPage = () => {
   const book = useSelector(state => state.books.currentBook);
   console.log('book', book);
-  if (!book) 
-  return null
+  if (!book)
+    return null
   return (
     <div className="book-page">
       <h1 className="book-page__title">{book.title}</h1>
       <div className="book-page__content">
         <div className="book-page__left">
+          <iframe
+            width="90%"
+            height="400px"
+            src={book.link}
+            frameBorder="0"
+          ></iframe>
         </div>
         <div className="book-page__right">
           <BookCover image={book.image} />
