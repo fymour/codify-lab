@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 
-.book-item__genre {
+.book-item__zhanr {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
     font-size: 14px;
 }
 
-.book-item__buy {
+.book-item__add {
     position: absolute;
     right: 0;
     bottom: -12px;

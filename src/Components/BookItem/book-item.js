@@ -20,7 +20,7 @@ export const BookItem = ({ book }) => {
       <BookCover image={book.image} />
       <div className="book-item__details">
         <span className="book-item__title">{book.title}</span>
-        <div className="book-item__genre">
+        <div className="book-item__zhanr">
           {book.zhanry.map((zhanr) => (
             <Bookzhanr zhanr={zhanr} key={zhanr} />
           ))}

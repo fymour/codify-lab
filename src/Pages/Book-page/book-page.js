@@ -14,12 +14,6 @@ export const BookPage = () => {
       <h1 className="book-page__title">{book.title}</h1>
       <div className="book-page__content">
         <div className="book-page__left">
-          <iframe
-            width="90%"
-            height="400px"
-            src={book.link}
-            frameBorder="0"
-          ></iframe>
         </div>
         <div className="book-page__right">
           <BookCover image={book.image} />

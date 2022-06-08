@@ -19,7 +19,7 @@ export const BookWish = ({ book }) => {
   };
 
   return (
-    <div className="book-buy">
+    <div className="book-add">
       <Button
         type={isItemInList ? "secondary" : "primary" }
         onClick={handleClick}
