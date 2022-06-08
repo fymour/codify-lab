@@ -4,10 +4,10 @@ import {
   Route,
 } from "react-router-dom";
 import { Header } from './Components/Header/header'
-// import { Wishlist } from './Components/Wishlist/wish-list'
+import { Wishlist } from './Components/Wishlist/wish-list'
 import { HomePage } from './Pages/Home-page/home-page'
 import { AddPage } from "./Pages/Add-list/add-to-list";
-import {BookPage} from './Pages/Book-page/book-page'
+import { BookPage } from './Pages/Book-page/book-page'
 import { Provider } from "react-redux";
 import { store } from "./store";
 
@@ -28,7 +28,7 @@ function App() {
               element={<HomePage />} >
             </Route>
             <Route
-            
+
               path="/app/:title"
               element={<BookPage />}>
             </Route>

@@ -6,7 +6,7 @@ import "./book-wish-list";
 
 export const BookWish = ({ book }) => {
   const dispatch = useDispatch();
-  const items = useSelector((state) => state.list.itemsInList);
+  const items = useSelector((state) => state.list.ItemsInList);
   const isItemInList = items.some((item) => item.id === book.id);
 
   const handleClick = (e) => {
