@@ -5,7 +5,7 @@ import { ListItem } from "../WishListItem/wish-list-item";
 import "./wish-list-menu.css";
 
 export const WishListMenu = ({ onClick }) => {
-  const items = useSelector((state) => state.list);
+  const items = useSelector((state) => state.wishlist.itemsInList);
   return (
     <div className="list-menu">
       <div className="list-menu__books-list">

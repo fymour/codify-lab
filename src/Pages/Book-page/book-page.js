@@ -7,6 +7,7 @@ import "./book-page.css";
 
 export const BookPage = () => {
   const book = useSelector(state => state.books.currentBook);
+  console.log('book', book);
   if (!book) 
   return null
   return (

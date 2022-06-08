@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const booksSlice = createSlice({
   name: 'books',
   initialState: {
-    currentBook: null
+    currentBook: null,
   },
   reducers: {
     setCurrentBook: (state, action) => {

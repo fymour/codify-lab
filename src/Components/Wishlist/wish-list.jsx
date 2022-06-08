@@ -3,7 +3,7 @@ import { useState, useCallback } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { WishListMenu } from "../WishListMenu/wish-list-menu";
-import { ItemsInList} from "../InWishList/in-wish-list";
+// import { ItemsInList} from "../InWishList/in-wish-list";
 import "./wish-list.css";
 import {BsFillHeartFill} from 'react-icons/bs'
  
@@ -20,7 +20,7 @@ export const Wishlist = () => {
 
   return (
     <div>
-        <ItemsInList quantity={items}/>
+        {/* <ItemsInList quantity={items}/> */}
       <BsFillHeartFill
         color="white"
         size={25}
